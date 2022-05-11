@@ -1,0 +1,35 @@
+.item_menu a{
+    color: #FFFFFF;
+}
+
+.item_menu a:hover{
+    color: var(--amarelo_padrao);
+}
+
+button {
+    background-color: var(--azul_padrao);
+    border: none;
+    color: #FFFFFF;
+    padding: .5rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: var(--amarelo_padrao);
+    color: #000000;
+}
+
+#footer_leitor_online_capitulo {
+    margin-top: 1rem;
+}
+
+#footer_leitor_online_capitulo p {
+    font-weight: bold;
+    padding: 1rem;
+    color: #FFFFFF;
+}

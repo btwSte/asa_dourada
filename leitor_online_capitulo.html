@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Asa Dourada - Capítulo Um</title>
+	<link href="css/jquery.touchPDF.css" rel="stylesheet" media="screen" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/padrao.css">
+	<link rel="stylesheet" href="css/leitor_online_capitulo.css">
+	<style>
+		body , html{
+			background-color: #404040;
+			display: flex;
+			flex-direction: column;
+		}
+	</style>
+</head>
+<body>
+	<header>
+        <div class="segura_menu">
+            <div id="header_logo">
+                <a href="index.html">
+                    <img src="img/logotipo_asa_dourada_rgb_v2.svg" alt="Asa dourada">
+                </a>
+            </div>
+            
+            <div id="menu">
+                <nav>
+                    <div class="item_menu">
+                        <a href="projeto.html">  
+                            O Projeto
+                        </a>
+                    </div>
+                    <div class="item_menu">
+                        <a href="manga.html">
+                            O Mangá
+                        </a>
+                    </div>
+                    <div class="item_menu">
+                        <a href="ler_online.html">
+                            Ler Online
+                        </a>
+                    </div>
+                    <div class="item_menu">
+                        <a href="personagens.html">
+                            Personagens
+                        </a>
+                    </div>
+                    <div class="item_menu">
+                        <a href="como_montar_pipa.html">
+                            Como montar uma pipa
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+	<div id="myPDF" style="margin: auto; display: flex; padding: 3rem 0"></div>
+
+	<footer id="footer_leitor_online_capitulo">
+        <p>TRABALHO DESENVOLVIDO POR ALUNOS DO SENAI BARUERI - 2022</p>
+    </footer>
+
+
+	<script type="text/javascript" src="js/pdf.compatibility.js"></script>
+	<script type="text/javascript" src="js/pdf.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.touchSwipe.js"></script>
+	<script type="text/javascript" src="js/jquery.touchPDF.js"></script>
+	<script type="text/javascript" src="js/jquery.panzoom.js"></script>
+	<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+
+	<script type="text/javascript">
+	
+		$(function() {
+			$("#myPDF").pdf( {
+				source: "ASA-DOURADA-digital.pdf"
+			} );
+		});
+
+	</script>
+</body>
+</html>
